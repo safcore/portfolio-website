@@ -1,10 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Safina Samnani - Third-year B.Tech Cyber Security student specializing in forensics, threat detection, and DevSecOps.">
+  <title>Safina Samnani | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <p>Welcome to my website.</p>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <span>Safina Samnani</span>
+        <span class="brand-tag">cyber_sec</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="badge badge-status">
+          <span class="status-dot"></span> Open for Cybersecurity Internships
+        </div>
+        <h1 id="hero-heading" style="margin-top: 1rem;">Safina Samnani</h1>
+        <p class="hero-lead">Third-Year B.Tech Cyber Security Student</p>
+        <p class="hero-description">
+          Focused on digital forensics, machine learning-driven threat detection, and DevSecOps practices.
+          Dedicated to analyzing security vulnerabilities, automating defensive controls, and building resilient systems.
+        </p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="about.html" class="btn btn-secondary">About &amp; Skills</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <h2 id="projects-heading">Featured Projects</h2>
+          <p class="section-subtitle">
+            Hands-on technical projects covering digital forensics, threat intelligence, and security automation.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Project 1: ForenX -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">ForenX</h3>
+              <span class="tag">Digital Forensics</span>
+            </div>
+            <div class="card-body">
+              <p>Digital forensics platform focused on evidence management, artifact analysis, and investigative workflows.</p>
+            </div>
+            <ul class="tag-list" aria-label="ForenX Technologies">
+              <li class="tag">Digital Forensics</li>
+              <li class="tag">Artifact Analysis</li>
+              <li class="tag">Python</li>
+            </ul>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/safcore/Forenx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 2: ERCS -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">ERCS</h3>
+              <span class="tag">Core System</span>
+            </div>
+            <div class="card-body">
+              <p>Emergency Response Coordination System (ERCS) &mdash; a web-based platform prototype designed for reporting emergency incidents, verification workflows, and coordinating response unit dispatch.</p>
+            </div>
+            <ul class="tag-list" aria-label="ERCS Technologies">
+              <li class="tag">Incident Response</li>
+              <li class="tag">System Architecture</li>
+              <li class="tag">Web Application</li>
+            </ul>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/safcore/ERCS-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3: AI Unidirectional Threat Detection -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">AI Unidirectional Threat Detection</h3>
+              <span class="tag">AI &amp; Threat Detection</span>
+            </div>
+            <div class="card-body">
+              <p>Near-real-time AI/ML pipeline for detecting and classifying cyber threats from unidirectional IP traffic using passive network telemetry.</p>
+            </div>
+            <ul class="tag-list" aria-label="Threat Detection Technologies">
+              <li class="tag">AI / Machine Learning</li>
+              <li class="tag">Threat Detection</li>
+              <li class="tag">Network Telemetry</li>
+            </ul>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/safcore/ai-unidirectional-threat-detection" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 4: DevSecOps Implementation on ERCS -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">ERCS &mdash; DevSecOps Pipeline</h3>
+              <span class="tag">DevSecOps &amp; CI/CD</span>
+            </div>
+            <div class="card-body">
+              <p>The security engineering pipeline developed for the ERCS project, integrating automated security validation, containerization with Docker, and CI/CD delivery controls via Jenkins.</p>
+            </div>
+            <ul class="tag-list" aria-label="DevSecOps Technologies">
+              <li class="tag">DevSecOps</li>
+              <li class="tag">CI/CD Security</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Jenkins</li>
+            </ul>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://github.com/safcore/ERCS-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">View on GitHub &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTF & Security Challenges Section -->
+      <section id="ctf" class="section" aria-labelledby="ctf-heading" style="padding-top: 0;">
+        <div class="section-header">
+          <h2 id="ctf-heading">CTF &amp; Security Challenges</h2>
+          <p class="section-subtitle">
+            Verified participation in competitive cybersecurity capture-the-flag events.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <!-- RootAccess CTF 2026 -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title" style="font-size: 1.15rem;">RootAccess CTF 2026</h3>
+              <span class="tag">CTF Participation</span>
+            </div>
+            <div class="card-body">
+              <div class="cert-meta-list">
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Team:</span>
+                  <span class="cert-meta-value">Phantom Troupe</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Organizer:</span>
+                  <span class="cert-meta-value">Revelation 5.0, IIEST Shibpur</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Digital Manhunt CTF -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title" style="font-size: 1.15rem;">Digital Manhunt CTF</h3>
+              <span class="tag">CTF Participation</span>
+            </div>
+            <div class="card-body">
+              <div class="cert-meta-list">
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Team:</span>
+                  <span class="cert-meta-value">Cipher$Ghosts!!</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Achievement:</span>
+                  <span class="cert-meta-value">Participation in the Online Round</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a href="about.html#certifications" class="btn btn-secondary">View Verified Certifications &rarr;</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="footer-text">&copy; 2026 Safina Samnani. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/safcore" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/safina-samnani-7a6233264/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="mailto:safinasamnani786@gmail.com" class="footer-link">Email Me</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
